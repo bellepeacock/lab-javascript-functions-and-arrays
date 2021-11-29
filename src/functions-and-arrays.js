@@ -61,9 +61,39 @@ function sumNumbers(numbers) {
 
 
 // Iteration #3.1 Bonus:
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 function sum() {
 
-}
+  let totalNumber = 0;
+
+  if (!mixedArr.length) {
+      
+    return 0;
+
+  } 
+
+  for (let i = 0; i < mixedArr.length; i++) {
+
+    if (typeof[i] == 'string') {
+
+      (mixedArr[i].length() - 1) += totalNumber;
+
+    } else if (typeof[i] == 'true') {
+
+      totalNumber += 1;
+
+    } else if (typeof[i] == 'false') {
+
+      return 0; 
+
+    } else {
+
+      sumNumbers(mixedArr) 
+    }
+      return totalNumber;
+  }
+
+} 
 
 
 
@@ -71,13 +101,28 @@ function sum() {
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersAvg) {
+
+  sumNumbers(numbersAvg)
+
+ let elementsNumber = 0
+
+ if (typeof[i] == 'number') {
+
+ for ( let i = 0; i < numbersAvg.length(); i++ ); {
+
+  i ++ elementsNumber;
+ }
+ return sumNumbers / elementsNumber;
+ }
+
+}
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength() {}
 
 // Bonus - Iteration #4.1
 function avg() {}
